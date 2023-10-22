@@ -1,0 +1,103 @@
+.header-navbar {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    background-color: transparent;
+}
+
+
+.header-navbar > button {
+    padding: 10px 20px;
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 25px;
+    transition: font-size 0.3s ease;
+    color:#df6a37;
+}
+
+.header-navbar > button.small-text {
+    font-size: 15px; 
+}
+
+
+/* Animation de survol */
+.header-navbar > button:hover {
+    transform: scale(1.25); /* ou toute autre valeur que vous préférez */
+    transition: transform 0.3s ease; /* ajustez la durée selon vos préférences */
+}
+
+@media (max-width: 768px) {
+    .header-navbar {
+        flex-wrap: wrap;
+        justify-content: space-around; /* ou 'space-between' selon vos préférences */
+    }
+
+    .header-navbar > button {
+        font-size: 20px; /* Réduisez la taille de la police si nécessaire */
+        margin: 5px;    /* Ajouter une marge pour éviter que les boutons ne se collent */
+    }
+}
+
+
+header {
+    background-color: transparent;
+    height: 125vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 75%;
+}
+
+.video-header2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+.video-header2 .header-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-logo {
+    height: 90%;
+    z-index: -1;
+    display: flex;        /* Active Flexbox */
+    align-items: center;  /* Centre verticalement */
+    justify-content: center; /* Centre horizontalement */
+    margin-bottom: 100px;
+}
+
+
+.wave.wave-bottom {
+    position: absolute;
+    bottom: -5px;
+    width: 100%; /* Ajoutez cette propriété pour garantir que la vague s'étend sur toute la largeur du header */
+
+}
+
+.wave-top {
+  background-color: #faf3ed;
+}
+
+.wave-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}

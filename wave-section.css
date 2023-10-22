@@ -1,0 +1,11 @@
+.wave-section1 {
+    position: relative;
+    top: -10px; 
+    transform: scaleY(-1) scaleX(-1);
+}
+
+.wave-section4 {
+    position: relative;
+    top: -10px; 
+    transform: scaleY(-1) scaleX(-1);
+}

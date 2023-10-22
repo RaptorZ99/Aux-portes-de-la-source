@@ -1,0 +1,24 @@
+.bottom-logo2 {
+    background-color: #bea797;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-logo img {
+    height: 80%;
+}
+
+/* Pied de page */
+footer {
+    background-color: #faf3ed;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer img {
+    width: 150px;
+    display: block;
+    margin: 20px auto;
+}

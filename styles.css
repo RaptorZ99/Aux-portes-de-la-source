@@ -1,0 +1,36 @@
+/* Styles généraux */
+
+.header-navbar button {
+    font-family: "Dancing Script", cursive;
+}
+
+body {
+    background-color:#faf3ed !important;
+}
+
+.title {
+    font-family: "Dancing Script", cursive;
+    font-size: 50px;
+    line-height: 1.2;
+    color: #283949;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.text {
+    font-family: Lato, sans-serif;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #283949;
+}
+
+.title--medium {
+    display: flex;
+    justify-content: center;
+    color:#faf3ed; /* Couleur noire pour la partie principale du texte */
+}
+
+.title--medium > span {
+    color: #df6a37; /* Couleur orange pour la partie du texte à l'intérieur de la balise <span> */
+    margin-left: 10px;
+}

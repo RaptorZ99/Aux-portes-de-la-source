@@ -1,0 +1,29 @@
+.parrallax1 {
+    background-image: url('parrallax.png'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+    background-position: center;
+    background-color: #faf3ed;
+    height: 105vh; /* ajustez selon vos besoins */
+    position:relative;
+}
+
+.logo-parallax1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* cela assure que le centre de l'image est aligné avec le centre du parent */
+}
+.wave-bottom2 {
+    position: absolute;
+    bottom: -10px;
+    width: 100%;
+    transform: scaleY(-1) scaleX(-1);
+}
+
+.wave-top2 {
+    position: relative;
+    top: -10px; 
+    transform: scaleY(-1) scaleX(-1);
+}

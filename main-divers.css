@@ -1,0 +1,43 @@
+.citation {
+    background-color: #bea797; 
+    margin-bottom: 0px; 
+    margin-top: 0px;
+    z-index: 2;
+}
+
+.empty-sectionX {
+    position: relative;
+    height: 800px;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #faf3ed;
+    z-index: 1;
+    overflow: visible;
+    display: flex;          /* Ajouté pour le centrage avec Flexbox */
+    align-items: center;    /* Centrage vertical du contenu avec Flexbox */
+    justify-content: center;/* Centrage horizontal du contenu avec Flexbox */
+}
+
+.wave-background {
+    position: relative;
+    z-index: 1;
+    display: flex;          /* Ajouté pour le centrage avec Flexbox */
+    align-items: center;    /* Centrage vertical du contenu avec Flexbox */
+    justify-content: center;/* Centrage horizontal du contenu avec Flexbox */
+}
+
+
+
+.titre-section2 {
+    position: absolute;
+    top: 50%;               /* Centrage vertical */
+    left: 50%;              /* Centrage horizontal */
+    z-index: 3;
+    transform: translate(-50%, -50%);  /* Ajustement pour un centrage précis */
+}
+
+#svgBG {
+    overflow: visible;
+    z-index: 3;
+}
