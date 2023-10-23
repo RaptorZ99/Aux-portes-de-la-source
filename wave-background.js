@@ -10,3 +10,16 @@ anime({
         { value: wave13 },
     ],
 });
+
+anime({
+    targets: '#waveBottom3 path',
+    easing: 'linear',
+    duration: 25000,
+    loop: true,
+    d: [
+        { value: [wave9, wave10] },
+        { value: wave11 },
+        { value: wave12 },
+        { value: wave9 },
+    ],
+});

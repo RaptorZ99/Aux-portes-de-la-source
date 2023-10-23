@@ -15,3 +15,18 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     
 });
+
+
+function scrollToSection(id) {
+    var elem = document.getElementById(id);
+    var elemHeight = elem.offsetHeight;
+    var viewportHeight = window.innerHeight;
+    var offsetTop = elem.offsetTop;
+    var centerElem = offsetTop + (elemHeight / 2);
+    var scrollToPosition = centerElem - (viewportHeight / 2);
+
+    window.scroll({
+        top: scrollToPosition,
+        behavior: 'smooth'
+    });
+}

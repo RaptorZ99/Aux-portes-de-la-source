@@ -1,18 +1,19 @@
-.bottom-logo2 {
+.bottom-end {
+    position: relative;
     background-color: #bea797;
     height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
 }
 
-.bottom-logo img {
-    height: 80%;
+.wave-bottom3 {
+    position: relative;
+    top: -10px;
+    transform: scaleY(-1) scaleX(-1);
 }
 
 /* Pied de page */
 footer {
-    background-color: #faf3ed;
+    background-color: #bea797;
     text-align: center;
     padding: 20px 0;
 }

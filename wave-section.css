@@ -1,11 +1,99 @@
+.containerX {
+    width: 80%;
+    height: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;   
+    display: flex;     /* Ajouté pour le centrage avec Flexbox */
+    align-items: center;    /* Centrage vertical du contenu avec Flexbox */
+    justify-content: center;/* Centrage horizontal du contenu avec Flexbox */
+ } 
+
 .wave-section1 {
     position: relative;
-    top: -10px; 
-    transform: scaleY(-1) scaleX(-1);
+}
+
+
+
+.titre-section2 {
+    position: absolute;
+    top: 50%;               /* Centrage vertical */
+    left: 50%;              /* Centrage horizontal */
+    z-index: 3;
+    transform: translate(-50%, -50%);  /* Ajustement pour un centrage précis */
+}
+
+.wave-section2 {
+    position: relative;
+    top: -5px;
 }
 
 .wave-section4 {
     position: relative;
-    top: -10px; 
     transform: scaleY(-1) scaleX(-1);
+}
+
+   
+.wave-section3 {
+        position: relative;
+        transform: scaleY(-1) scaleX(-1);
+}
+    
+.empty-sectionX {height: 1000px;
+    background-color: #faf3ed;
+    position: relative;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    z-index: 1; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.empty-section1 {height: 1000px;
+    background-color: #bea797;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.empty-section2 {height: 1000px;
+    background-color: #faf3ed; 
+    display: flex;
+    align-items: center;
+    justify-content: center;     
+}
+
+.empty-section3 {height: 1000px;
+    background-color: #bea797; 
+    display: flex;
+    align-items: center;
+    justify-content: center;     
+}
+
+.empty-section4 {height: 1000px;
+    background-color: #faf3ed;  
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+
+.justify-section {
+    position: relative;
+    width: 80%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    z-index: 1; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
