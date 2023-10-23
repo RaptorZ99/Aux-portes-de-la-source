@@ -16,8 +16,8 @@ function scrollToSection(id) {
 // Gestion de la navbar
 const navbar = document.querySelector(".header-navbar");
 const logoButton = document.getElementById("section0");
-const leftButtons = navbar.querySelectorAll(":nth-child(-n+3)");
-const rightButtons = navbar.querySelectorAll(":nth-child(n+5)");
+const leftButtons = Array.from(navbar.children).slice(0, 3); // Prend les trois premiers enfants
+const rightButtons = Array.from(navbar.children).slice(-3); // Prend les trois derniers enfants
 
 function showButtons() {
     leftButtons.forEach(btn => {

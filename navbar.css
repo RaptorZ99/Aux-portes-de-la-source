@@ -7,8 +7,9 @@
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 1000;
+    z-index: 10;
     background-color: transparent;
+
 }
 
 .header-navbar > button {
@@ -24,12 +25,13 @@
 }
 
 .header-navbar > button:hover {
-    transform: scale(1.25);
+    transform: scale(1.2) translateX(0);
 }
+
 
 #section0 {
     opacity: 1;
-    /* les autres styles du logo */
+    z-index: 11;
 }
 
 #section0 img {
@@ -40,7 +42,7 @@
 .header-navbar > .logo-button {
     transition: none !important;
     opacity: 1 !important;
-    z-index: 2;
+
 }
 
 @media (max-width: 768px) {
