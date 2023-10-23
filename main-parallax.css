@@ -15,6 +15,14 @@
     left: 50%;
     transform: translate(-50%, -50%); /* cela assure que le centre de l'image est aligné avec le centre du parent */
 }
+
+.logo-parallax1 img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover; /* Pour s'assurer que l'image conserve ses proportions */
+}
+
+
 .wave-bottom2 {
     position: absolute;
     bottom: -10px;

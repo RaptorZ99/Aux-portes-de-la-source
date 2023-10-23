@@ -1,0 +1,56 @@
+
+.header-navbar {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    background-color: transparent;
+}
+
+.header-navbar > button {
+    padding: 10px 20px;
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 25px;
+    transition: font-size 0.3s ease, transform 0.5s ease, opacity 0.5s ease;
+    color: #df6a37;
+    z-index: 1;
+}
+
+.header-navbar > button:hover {
+    transform: scale(1.25);
+}
+
+#section0 {
+    opacity: 1;
+    /* les autres styles du logo */
+}
+
+#section0 img {
+    width: 50px;
+    height: auto;
+}
+
+.header-navbar > .logo-button {
+    transition: none !important;
+    opacity: 1 !important;
+    z-index: 2;
+}
+
+@media (max-width: 768px) {
+    .header-navbar {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .header-navbar > button {
+        font-size: 20px;
+        margin: 5px;
+    }
+}
