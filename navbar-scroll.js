@@ -19,8 +19,6 @@ const logoButton = document.getElementById("section0");
 const leftButtons = Array.from(navbar.children).slice(0, 3); // Prend les trois premiers enfants
 const rightButtons = Array.from(navbar.children).slice(-3); // Prend les trois derniers enfants
 
-// ... Votre code JavaScript existant ...
-
 function hideButtons() {
     leftButtons.forEach(btn => {
         btn.classList.add('disperse');
@@ -39,23 +37,22 @@ function showButtons() {
     });
 }
 
-
 navbar.addEventListener("mouseleave", function() {
-    if (window.scrollY > window.innerHeight) {
+    if (window.scrollY > 0) {
         hideButtons();
     }
 });
 
 window.addEventListener("scroll", () => {
-    if (window.scrollY <= window.innerHeight) {
-        showButtons();
-    } else {
+    if (window.scrollY > 0) {
         hideButtons();
+    } else {
+        showButtons();
     }
 });
 
 logoButton.addEventListener("mouseover", function() {
-    if (window.scrollY > window.innerHeight) {
+    if (window.scrollY > 0) {
         showButtons();
     }
 });

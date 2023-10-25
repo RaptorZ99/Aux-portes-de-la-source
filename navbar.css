@@ -7,6 +7,7 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
+    min-width: 555px;
 }
 
 .header-navbar > button {
@@ -45,22 +46,32 @@
 @media (max-width: 768px) {
     .header-navbar {
         flex-wrap: wrap;
-        align-items: center;
+        align-items: flex-start; /* Alignement au début pour le bouton logo */
+        justify-content: space-between; /* Espacement entre les boutons */
     }
 
     .header-navbar > button:nth-child(1),
     .header-navbar > button:nth-child(2),
     .header-navbar > button:nth-child(3) {
-        order: -1; /* Boutons à gauche du bouton logo */
+        order: 1; /* Boutons à gauche du bouton logo */
     }
 
     .header-navbar > button#section0 {
-        width: 100%;
+        order: 0; /* Place le bouton logo en haut */
+        width: 100%; /* Assurez-vous que la largeur est de 100% pour l'alignement */
+        align-self: flex-start; /* Alignement auto en haut */
     }
 
     .header-navbar > button:nth-child(5),
     .header-navbar > button:nth-child(6),
     .header-navbar > button:nth-child(7) {
-        order: 1; /* Boutons à droite du bouton logo */
+        order: 2; /* Boutons à droite du bouton logo */
     }
+}
+
+@media (max-width: 553px) {
+    .header-navbar {
+        overflow-x: auto; /* Ajoute un défilement horizontal si nécessaire */
+    }
+    /* Autres styles pour ajuster les boutons ou le contenu si nécessaire */
 }

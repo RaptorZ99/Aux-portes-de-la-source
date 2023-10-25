@@ -4,14 +4,17 @@
 }
 
 body {
-    background-color:#faf3ed !important;
+    background-color: #faf3ed !important;
+    overflow-x: hidden;
 }
 
 .main-container {
     height: 1500px;
-    width: 100%; 
-    overflow-y: auto; /* Active le défilement vertical si nécessaire */
+    min-width: 554px; /* Largeur minimale définie à 554px */
+    overflow-y: auto;
+    overflow-x: auto; /* Permet le défilement horizontal si nécessaire */
 }
+
 
 .title {
     font-family: "Dancing Script", cursive;
