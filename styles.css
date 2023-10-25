@@ -1,11 +1,16 @@
 /* Styles généraux */
-
 .header-navbar button {
     font-family: "Dancing Script", cursive;
 }
 
 body {
     background-color:#faf3ed !important;
+}
+
+.main-container {
+    height: 1500px;
+    width: 100%; 
+    overflow-y: auto; /* Active le défilement vertical si nécessaire */
 }
 
 .title {
