@@ -28,6 +28,13 @@
     transform: scale(1.2) translateX(0);
 }
 
+.header-navbar > button.disperse {
+    opacity: 0;
+    transform: scale(0.5);
+    filter: blur(8px);
+    transition: transform 0.5s ease, opacity 0.5s ease, filter 0.5s ease;
+}
+
 
 #section0 {
     opacity: 1;
@@ -39,20 +46,27 @@
     height: auto;
 }
 
-.header-navbar > .logo-button {
-    transition: none !important;
-    opacity: 1 !important;
-
-}
 
 @media (max-width: 768px) {
     .header-navbar {
-        flex-wrap: wrap;
-        justify-content: space-around;
+        flex-wrap: wrap; /* Permet aux éléments de se déplacer à la ligne suivante si nécessaire */
     }
 
-    .header-navbar > button {
-        font-size: 20px;
-        margin: 5px;
+    .header-navbar > button:nth-child(1),
+    .header-navbar > button:nth-child(2),
+    .header-navbar > button:nth-child(3) {
+        order: -1; /* Place ces boutons à gauche du bouton logo */
+    }
+
+    .header-navbar > button:nth-child(5),
+    .header-navbar > button:nth-child(6),
+    .header-navbar > button:nth-child(7) {
+        order: 1; /* Place ces boutons à droite du bouton logo */
+    }
+
+    .header-navbar > button#section0 {
+        order: 0; /* Assurez-vous que le bouton logo reste au centre */
+        flex-grow: 1; /* Permet au bouton logo de prendre tout l'espace disponible */
+        text-align: center; /* Centre le contenu du bouton logo */
     }
 }

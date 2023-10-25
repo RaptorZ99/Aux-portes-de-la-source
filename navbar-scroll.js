@@ -19,27 +19,26 @@ const logoButton = document.getElementById("section0");
 const leftButtons = Array.from(navbar.children).slice(0, 3); // Prend les trois premiers enfants
 const rightButtons = Array.from(navbar.children).slice(-3); // Prend les trois derniers enfants
 
-function showButtons() {
-    leftButtons.forEach(btn => {
-        btn.style.transform = "translateX(0) scaleX(1)";
-        btn.style.opacity = "1";
-    });
-    rightButtons.forEach(btn => {
-        btn.style.transform = "translateX(0) scaleX(1)";
-        btn.style.opacity = "1";
-    });
-}
+// ... Votre code JavaScript existant ...
 
 function hideButtons() {
     leftButtons.forEach(btn => {
-        btn.style.transform = "translateX(100%) scaleX(0)";
-        btn.style.opacity = "0";
+        btn.classList.add('disperse');
     });
     rightButtons.forEach(btn => {
-        btn.style.transform = "translateX(-100%) scaleX(0)";
-        btn.style.opacity = "0";
+        btn.classList.add('disperse');
     });
 }
+
+function showButtons() {
+    leftButtons.forEach(btn => {
+        btn.classList.remove('disperse');
+    });
+    rightButtons.forEach(btn => {
+        btn.classList.remove('disperse');
+    });
+}
+
 
 navbar.addEventListener("mouseleave", function() {
     if (window.scrollY > window.innerHeight) {
