@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #faf3ed !important;
+    background-color:#faf3ed !important;
     overflow-x: hidden;
 }
 
@@ -39,7 +39,7 @@ strong {
 .title--medium {
     display: flex;
     justify-content: center;
-    color:#faf3ed; /* Couleur noire pour la partie principale du texte */
+    color:#bea797; /* Couleur noire pour la partie principale du texte */
 }
 
 .title--medium > span {
