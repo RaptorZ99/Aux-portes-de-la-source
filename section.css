@@ -16,8 +16,6 @@
     bottom: -5px;
 }
 
-
-
 .titre-section2 {
     position: absolute;
     top: 50%;               /* Centrage vertical */
@@ -89,4 +87,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.blank-col {
+    height: 100px;
 }

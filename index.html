@@ -13,6 +13,8 @@
     <link rel="stylesheet" type="text/css" href="section.css">
     <link rel="stylesheet" type="text/css" href="footer.css">
     <link rel="stylesheet" type="text/css" href="navbar.css">
+    <link rel="stylesheet" type="text/css" href="boutons-presta.css">
+    <link rel="stylesheet" type="text/css" href="boutons-soins.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,13 +39,13 @@
             
         <div class="header-navbar">
             <button onclick="scrollToSection('section1')">À Propos</button>
-            <button onclick="scrollToSection('section2')">Prestations</button>
-            <button onclick="scrollToSection('sectionX')">Soins</button>
+            <button onclick="scrollToSection('section2')">Services</button>
+            <button onclick="scrollToSection('sectionX')">feng Shui</button>
             <button id="section0" class="logo-button">
                 <img src="Logo final-cut.png" alt="logo entre les boutons">
             </button>
-            <button onclick="scrollToSection('sectionX2')">Rééquilibrage</button>
-            <button onclick="scrollToSection('section3')">Feng shui</button>
+            <button onclick="scrollToSection('sectionX2')">Soins Holistiques</button>
+            <button onclick="scrollToSection('section3')">Contact</button>
             <button onclick="scrollToSection('section4')">Avis</button>
         </div>        
         
@@ -115,28 +117,62 @@
             <section id="section2" class="empty-sectionX">
                 <div class="justify-section">
                     <div class="row">
-                        <div class="col-md-4 mb-4">
+                        <div class="col-md-4">
                             <div class="wave wave-background" id="waveBackground">
                                 <svg id="svgBG" viewBox="0 0 104.3 72" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill="#f5dccb" d="M29.4,3.2C6.9,16.1-7,14.5,3.6,50.3s35.6,17.4,48.7,13.8s11.6-3,23.1,0s31.6-17.5,28.5-31.4S51.9-9.6,29.4,3.2z"/>
+                                    <path fill="#f5dccb" d="M29.4,3.2C6.9,16.1-7,14.5,3.6,50.3s35.6,17.4,48.7,13.8s11.6-3,23.1,0s31.6-17.5,28.5-31.4S51.9-9.6,29.4,3.2z"/> 
                                 </svg>  
-                                <h2 class="title titre-section2">
-                                    Préstations 
-                                </h2>
+                                <h2 class="title titre-section2">Services</h2>
                             </div>
                         </div>
 
                         <div class="col-md-8">
-                            <div class="text text-section2">
-                                <p>Je suis <strong>en quête d’équilibre, d’harmonie, de bien être, d’épanouissement personnel</strong> ce qui pour moi donne du sens à la vie et au bonheur recherché. Certainement comme chacun d’entre nous.</p>
-                                <p>Je constate depuis plusieurs années que notre société, telle que nous l’avons construite, ne nous incite plus à croire en nous même, en ce que nous sommes réellement <strong>alors que nos potentiels sont immenses ! </strong></p>
-                                <p>Je m’appelle <strong>Estelle Fayard-Lyonnet</strong> , je suis praticienne Ayurvéda et Naturopathe par Biorésonnance. J’ai créé <strong>BE YOURVEDA</strong>, entreprise spécialisée dans les domaines de la santé et du bien-être pour tous. BE YOURVEDA est une invitation à la rencontre de soi-même et de sa connaissance où le corps et l’esprit cheminent ensemble vers leur propre équilibre.</p>
+                            <div class="buttons">
+                                <button id="subtitle1" class="subtitle active">
+                                    Méditations gratuites
+                                </button>
+                                <button id="subtitle2" class="subtitle">
+                                    Méditations
+                                </button>
+                                <button id="subtitle3" class="subtitle">
+                                    Conférences
+                                </button>
+                                <button id="subtitle4" class="subtitle">
+                                    Stage
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="blank-col"></div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="text text-section">
+                                <div id="content1" class="content-item active">
+                                    <p>Je suis <strong>en quête d’équilibre, d’harmonie, de bien être, d’épanouissement personnel</strong> ce qui pour moi donne du sens à la vie et au bonheur recherché. Certainement comme chacun d’entre nous.</p>
+                                    <p>Je constate depuis plusieurs années que notre société, telle que nous l’avons construite, ne nous incite plus à croire en nous même, en ce que nous sommes réellement <strong>alors que nos potentiels sont immenses ! </strong></p>
+                                    <p>Je m’appelle <strong>Estelle Fayard-Lyonnet</strong> , je suis praticienne Ayurvéda et Naturopathe par Biorésonnance. J’ai créé <strong>BE YOURVEDA</strong>, entreprise spécialisée dans les domaines de la santé et du bien-être pour tous. BE YOURVEDA est une invitation à la rencontre de soi-même et de sa connaissance où le corps et l’esprit cheminent ensemble vers leur propre équilibre.</p>
+                                </div>
+                                <div id="content2" class="content-item">
+                                    <p>Je suis <strong>en quête d’équilibre, d’harmonie, de bien être, d’épanouissement personnel</strong> ce qui pour moi donne du sens à la vie et au bonheur recherché. Certainement comme chacun d’entre nous.</p>
+                                    <p>Je m’appelle <strong>Estelle Fayard-Lyonnet</strong> , je suis praticienne Ayurvéda et Naturopathe par Biorésonnance. J’ai créé <strong>BE YOURVEDA</strong>, entreprise spécialisée dans les domaines de la santé et du bien-être pour tous. BE YOURVEDA est une invitation à la rencontre de soi-même et de sa connaissance où le corps et l’esprit cheminent ensemble vers leur propre équilibre.</p>
+                                </div>
+                                <div id="content3" class="content-item">
+                                    <p>Je suis <strong>en quête d’équilibre, d’harmonie, de bien être, d’épanouissement personnel</strong> ce qui pour moi donne du sens à la vie et au bonheur recherché. Certainement comme chacun d’entre nous.</p>
+                                    <p>Je m’appelle <strong>Estelle Fayard-Lyonnet</strong> , je suis praticienne Ayurvéda et Naturopathe par Biorésonnance. J’ai créé <strong>BE YOURVEDA</strong>, entreprise spécialisée dans les domaines de la santé et du bien-être pour tous. BE YOURVEDA est une invitation à la rencontre de soi-même et de sa connaissance où le corps et l’esprit cheminent ensemble vers leur propre équilibre.</p>
+                                    <p>Je constate depuis plusieurs années que notre société, telle que nous l’avons construite, ne nous incite plus à croire en nous même, en ce que nous sommes réellement <strong>alors que nos potentiels sont immenses ! </strong></p>
+                                </div>
+                                <div id="content4" class="content-item">
+                                    <p>Je suis <strong>en quête d’équilibre, d’harmonie, de bien être, d’épanouissement personnel</strong> ce qui pour moi donne du sens à la vie et au bonheur recherché. Certainement comme chacun d’entre nous.</p>
+                                    <p>Je m’appelle <strong>Estelle Fayard-Lyonnet</strong> , je suis praticienne Ayurvéda et Naturopathe par Biorésonnance. J’ai créé <strong>BE YOURVEDA</strong>, entreprise spécialisée dans les domaines de la santé et du bien-être pour tous. BE YOURVEDA est une invitation à la rencontre de soi-même et de sa connaissance où le corps et l’esprit cheminent ensemble vers leur propre équilibre.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>                
             </section>
-
+        
             <div class="wave wave-section1" id="waveSection1">
                 <svg viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
                     <path fill="#bea797" d="M0 108.306L50 114.323C100 120.34 200 132.374 300 168.476C400 204.578 500 264.749 600 246.698C700 228.647 800 132.374 900 108.306C1000 84.2382 1100 132.374 1150 156.442L1200 180.51V0H1150C1100 0 1000 0 900 0C800 0 700 0 600 0C500 0 400 0 300 0C200 0 100 0 50 0H0V108.306Z"></path>
@@ -146,25 +182,23 @@
             <section id="sectionX" class="empty-section1">
                 <div class="justify-section">
                     <div class="row">
+                         <div class="col-md-8">
+                            <div class="text text-section">
+                                <p>Je suis <strong>en quête d’équilibre, d’harmonie, de bien être, d’épanouissement personnel</strong> ce qui pour moi donne du sens à la vie et au bonheur recherché. Certainement comme chacun d’entre nous.</p>
+                                <p>Je constate depuis plusieurs années que notre société, telle que nous l’avons construite, ne nous incite plus à croire en nous même, en ce que nous sommes réellement <strong>alors que nos potentiels sont immenses ! </strong></p>
+                                <p>Je m’appelle <strong>Estelle Fayard-Lyonnet</strong> , je suis praticienne Ayurvéda et Naturopathe par Biorésonnance. J’ai créé <strong>BE YOURVEDA</strong>, entreprise spécialisée dans les domaines de la santé et du bien-être pour tous. BE YOURVEDA est une invitation à la rencontre de soi-même et de sa connaissance où le corps et l’esprit cheminent ensemble vers leur propre équilibre.</p>
+                            </div>  
+                        </div>
                         <div class="col-md-4 mb-4">
                             <div class="wave wave-background" id="waveBackground">
                                 <svg id="svgBG" viewBox="0 0 104.3 72" xmlns="http://www.w3.org/2000/svg">
                                     <path fill="#f5dccb" d="M29.4,3.2C6.9,16.1-7,14.5,3.6,50.3s35.6,17.4,48.7,13.8s11.6-3,23.1,0s31.6-17.5,28.5-31.4S51.9-9.6,29.4,3.2z"/>
                                 </svg>  
                                 <h2 class="title titre-section2">
-                                    Soins 
+                                    Feng Shui 
                                 </h2>
                             </div>
                         </div>
-                        <div class="col-md-8">
-                            <div class="text text-section2">
-                                <p>Je suis <strong>en quête d’équilibre, d’harmonie, de bien être, d’épanouissement personnel</strong> ce qui pour moi donne du sens à la vie et au bonheur recherché. Certainement comme chacun d’entre nous.</p>
-                                <p>Je constate depuis plusieurs années que notre société, telle que nous l’avons construite, ne nous incite plus à croire en nous même, en ce que nous sommes réellement <strong>alors que nos potentiels sont immenses ! </strong></p>
-                                <p>Je m’appelle <strong>Estelle Fayard-Lyonnet</strong> , je suis praticienne Ayurvéda et Naturopathe par Biorésonnance. J’ai créé <strong>BE YOURVEDA</strong>, entreprise spécialisée dans les domaines de la santé et du bien-être pour tous. BE YOURVEDA est une invitation à la rencontre de soi-même et de sa connaissance où le corps et l’esprit cheminent ensemble vers leur propre équilibre.</p>
-                            </div>
-                            
-                        </div>
-                       
                     </div>    
                 </div>
             </section>
@@ -184,16 +218,52 @@
                                     <path fill="#f5dccb" d="M29.4,3.2C6.9,16.1-7,14.5,3.6,50.3s35.6,17.4,48.7,13.8s11.6-3,23.1,0s31.6-17.5,28.5-31.4S51.9-9.6,29.4,3.2z"/>
                                 </svg>  
                                 <h2 class="title titre-section2">
-                                    Rééquilibrage 
+                                    Soins Holistiques 
                                 </h2>
                             </div>
                         </div>
         
                         <div class="col-md-8">
-                            <div class="text text-section2">
-                                <p>Je suis <strong>en quête d’équilibre, d’harmonie, de bien être, d’épanouissement personnel</strong> ce qui pour moi donne du sens à la vie et au bonheur recherché. Certainement comme chacun d’entre nous.</p>
-                                <p>Je constate depuis plusieurs années que notre société, telle que nous l’avons construite, ne nous incite plus à croire en nous même, en ce que nous sommes réellement <strong>alors que nos potentiels sont immenses ! </strong></p>
-                                <p>Je m’appelle <strong>Estelle Fayard-Lyonnet</strong> , je suis praticienne Ayurvéda et Naturopathe par Biorésonnance. J’ai créé <strong>BE YOURVEDA</strong>, entreprise spécialisée dans les domaines de la santé et du bien-être pour tous. BE YOURVEDA est une invitation à la rencontre de soi-même et de sa connaissance où le corps et l’esprit cheminent ensemble vers leur propre équilibre.</p>
+                            <div class="buttons2">
+                                <button id="subtitle5" class="subtitle2 active">
+                                    Mains du Tao
+                                </button>
+                                <button id="subtitle6" class="subtitle2">
+                                    Lignée Kuan Yin
+                                </button>
+                                <button id="subtitle7" class="subtitle2">
+                                    Lieux
+                                </button>
+                                <button id="subtitle8" class="subtitle2">
+                                    Personnes
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="blank-col"></div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="text text-section">
+                                <div id="content5" class="content-item2 active">
+                                    <p>Je suis <strong>en quête d’équilibre, d’harmonie, de bien être, d’épanouissement personnel</strong> ce qui pour moi donne du sens à la vie et au bonheur recherché. Certainement comme chacun d’entre nous.</p>
+                                    <p>Je constate depuis plusieurs années que notre société, telle que nous l’avons construite, ne nous incite plus à croire en nous même, en ce que nous sommes réellement <strong>alors que nos potentiels sont immenses ! </strong></p>
+                                    <p>Je m’appelle <strong>Estelle Fayard-Lyonnet</strong> , je suis praticienne Ayurvéda et Naturopathe par Biorésonnance. J’ai créé <strong>BE YOURVEDA</strong>, entreprise spécialisée dans les domaines de la santé et du bien-être pour tous. BE YOURVEDA est une invitation à la rencontre de soi-même et de sa connaissance où le corps et l’esprit cheminent ensemble vers leur propre équilibre.</p>
+                                </div>
+                                <div id="content6" class="content-item2">
+                                    <p>Je suis <strong>en quête d’équilibre, d’harmonie, de bien être, d’épanouissement personnel</strong> ce qui pour moi donne du sens à la vie et au bonheur recherché. Certainement comme chacun d’entre nous.</p>
+                                    <p>Je m’appelle <strong>Estelle Fayard-Lyonnet</strong> , je suis praticienne Ayurvéda et Naturopathe par Biorésonnance. J’ai créé <strong>BE YOURVEDA</strong>, entreprise spécialisée dans les domaines de la santé et du bien-être pour tous. BE YOURVEDA est une invitation à la rencontre de soi-même et de sa connaissance où le corps et l’esprit cheminent ensemble vers leur propre équilibre.</p>
+                                </div>
+                                <div id="content7" class="content-item2">
+                                    <p>Je suis <strong>en quête d’équilibre, d’harmonie, de bien être, d’épanouissement personnel</strong> ce qui pour moi donne du sens à la vie et au bonheur recherché. Certainement comme chacun d’entre nous.</p>
+                                    <p>Je m’appelle <strong>Estelle Fayard-Lyonnet</strong> , je suis praticienne Ayurvéda et Naturopathe par Biorésonnance. J’ai créé <strong>BE YOURVEDA</strong>, entreprise spécialisée dans les domaines de la santé et du bien-être pour tous. BE YOURVEDA est une invitation à la rencontre de soi-même et de sa connaissance où le corps et l’esprit cheminent ensemble vers leur propre équilibre.</p>
+                                    <p>Je constate depuis plusieurs années que notre société, telle que nous l’avons construite, ne nous incite plus à croire en nous même, en ce que nous sommes réellement <strong>alors que nos potentiels sont immenses ! </strong></p>
+                                </div>
+                                <div id="content8" class="content-item2">
+                                    <p>Je suis <strong>en quête d’équilibre, d’harmonie, de bien être, d’épanouissement personnel</strong> ce qui pour moi donne du sens à la vie et au bonheur recherché. Certainement comme chacun d’entre nous.</p>
+                                    <p>Je m’appelle <strong>Estelle Fayard-Lyonnet</strong> , je suis praticienne Ayurvéda et Naturopathe par Biorésonnance. J’ai créé <strong>BE YOURVEDA</strong>, entreprise spécialisée dans les domaines de la santé et du bien-être pour tous. BE YOURVEDA est une invitation à la rencontre de soi-même et de sa connaissance où le corps et l’esprit cheminent ensemble vers leur propre équilibre.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -209,24 +279,23 @@
             <section id="section3" class="empty-section3">
                 <div class="justify-section">
                     <div class="row">
+                        <div class="col-md-8">
+                            <div class="text text-section">
+                                <p>Je suis <strong>en quête d’équilibre, d’harmonie, de bien être, d’épanouissement personnel</strong> ce qui pour moi donne du sens à la vie et au bonheur recherché. Certainement comme chacun d’entre nous.</p>
+                                <p>Je constate depuis plusieurs années que notre société, telle que nous l’avons construite, ne nous incite plus à croire en nous même, en ce que nous sommes réellement <strong>alors que nos potentiels sont immenses ! </strong></p>
+                                <p>Je m’appelle <strong>Estelle Fayard-Lyonnet</strong> , je suis praticienne Ayurvéda et Naturopathe par Biorésonnance. J’ai créé <strong>BE YOURVEDA</strong>, entreprise spécialisée dans les domaines de la santé et du bien-être pour tous. BE YOURVEDA est une invitation à la rencontre de soi-même et de sa connaissance où le corps et l’esprit cheminent ensemble vers leur propre équilibre.</p>
+                            </div>
+                        </div>
                         <div class="col-md-4 mb-4">
                             <div class="wave wave-background" id="waveBackground">
                                 <svg id="svgBG" viewBox="0 0 104.3 72" xmlns="http://www.w3.org/2000/svg">
                                     <path fill="#f5dccb" d="M29.4,3.2C6.9,16.1-7,14.5,3.6,50.3s35.6,17.4,48.7,13.8s11.6-3,23.1,0s31.6-17.5,28.5-31.4S51.9-9.6,29.4,3.2z"/>
                                 </svg>  
                                 <h2 class="title titre-section2">
-                                    Feng shui  
+                                    Contact
                                 </h2>
                             </div>
                         </div>
-                        <div class="col-md-8">
-                            <div class="text text-section2">
-                                <p>Je suis <strong>en quête d’équilibre, d’harmonie, de bien être, d’épanouissement personnel</strong> ce qui pour moi donne du sens à la vie et au bonheur recherché. Certainement comme chacun d’entre nous.</p>
-                                <p>Je constate depuis plusieurs années que notre société, telle que nous l’avons construite, ne nous incite plus à croire en nous même, en ce que nous sommes réellement <strong>alors que nos potentiels sont immenses ! </strong></p>
-                                <p>Je m’appelle <strong>Estelle Fayard-Lyonnet</strong> , je suis praticienne Ayurvéda et Naturopathe par Biorésonnance. J’ai créé <strong>BE YOURVEDA</strong>, entreprise spécialisée dans les domaines de la santé et du bien-être pour tous. BE YOURVEDA est une invitation à la rencontre de soi-même et de sa connaissance où le corps et l’esprit cheminent ensemble vers leur propre équilibre.</p>
-                            </div>
-                        </div>
-                        
                     </div>  
                 </div>
             </section>
@@ -252,7 +321,7 @@
                         </div>
         
                         <div class="col-md-8">
-                            <div class="text text-section2">
+                            <div class="text text-section">
                                 <p>Je suis <strong>en quête d’équilibre, d’harmonie, de bien être, d’épanouissement personnel</strong> ce qui pour moi donne du sens à la vie et au bonheur recherché. Certainement comme chacun d’entre nous.</p>
                                 <p>Je constate depuis plusieurs années que notre société, telle que nous l’avons construite, ne nous incite plus à croire en nous même, en ce que nous sommes réellement <strong>alors que nos potentiels sont immenses ! </strong></p>
                                 <p>Je m’appelle <strong>Estelle Fayard-Lyonnet</strong> , je suis praticienne Ayurvéda et Naturopathe par Biorésonnance. J’ai créé <strong>BE YOURVEDA</strong>, entreprise spécialisée dans les domaines de la santé et du bien-être pour tous. BE YOURVEDA est une invitation à la rencontre de soi-même et de sa connaissance où le corps et l’esprit cheminent ensemble vers leur propre équilibre.</p>
@@ -288,6 +357,8 @@
     <script src="wave-parallax.js"></script>
     <script src="wave-sections.js"></script>
     <script src="wave-background.js"></script>
+    <script src="boutons-presta.js"></script>
+    <script src="boutons-soins.js"></script>
    
 </body>
 </html>

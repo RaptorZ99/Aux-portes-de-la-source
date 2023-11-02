@@ -1,0 +1,43 @@
+.subtitle.active {
+    background-color: #f5dccb ; /* couleur de fond des boutons actifs */
+    z-index: 10;
+}
+
+.content-item {
+    display: none;
+}
+
+.content-item.active {
+    display: block;
+    background-color: #faf3ed ; /* couleur de fond des boutons actifs */
+    z-index: 10;
+}
+
+.buttons {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.subtitle {
+    font-family: "Dancing Script", cursive;
+    font-size: 35px;
+    line-height: 1.2;
+    color: #df6a37;
+    text-align: center;
+    border: none;           /* Ajout pour enlever la bordure */
+    outline: none;          /* Ajout pour enlever la bordure lors du focus */
+    background-color: transparent;
+}
+
+@media (max-width: 1240px) {
+    .buttons {
+        flex-direction: column; /* Modifie la direction principale du flexbox de row (par défaut) à column */
+    }
+
+    .subtitle {
+        margin-bottom: 10px; /* Ajoute une marge en bas pour espacer les boutons empilés */
+    }
+}
