@@ -1,4 +1,4 @@
-.subtitle2.active {
+.subtitle-2.active {
     background-color: #f5dccb ; /* couleur de fond des boutons actifs */
     z-index: 10;
 }
@@ -21,7 +21,7 @@
     padding: 15px;
 }
 
-.subtitle2 {
+.subtitle-2 {
     font-family: "Dancing Script", cursive;
     font-size: 35px;
     line-height: 1.2;
@@ -37,7 +37,7 @@
         flex-direction: column; /* Modifie la direction principale du flexbox de row (par défaut) à column */
     }
 
-    .subtitle2 {
+    .subtitle-2 {
         margin-bottom: 10px; /* Ajoute une marge en bas pour espacer les boutons empilés */
     }
 }

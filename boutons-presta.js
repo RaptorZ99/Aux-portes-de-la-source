@@ -15,14 +15,14 @@ document.getElementById('subtitle4').addEventListener('click', function() {
 });
 
 function toggleContent(btnId, contentId) {
-    document.querySelectorAll('.subtitle').forEach(btn => {
-        btn.classList.remove('active');
+    document.querySelectorAll('.subtitle-1').forEach(btn => {
+        btn.classList.remove('active1');
     });
 
     document.querySelectorAll('.content-item').forEach(content => {
-        content.classList.remove('active');
+        content.classList.remove('active1');
     });
 
-    document.getElementById(btnId).classList.add('active');
-    document.getElementById(contentId).classList.add('active');
+    document.getElementById(btnId).classList.add('active1');
+    document.getElementById(contentId).classList.add('active1');
 }

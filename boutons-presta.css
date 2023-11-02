@@ -1,4 +1,4 @@
-.subtitle.active {
+.subtitle-1.active1 {
     background-color: #f5dccb ; /* couleur de fond des boutons actifs */
     z-index: 10;
 }
@@ -7,7 +7,7 @@
     display: none;
 }
 
-.content-item.active {
+.content-item.active1 {
     display: block;
     background-color: #faf3ed ; /* couleur de fond des boutons actifs */
     z-index: 10;
@@ -21,7 +21,7 @@
     padding: 15px;
 }
 
-.subtitle {
+.subtitle-1 {
     font-family: "Dancing Script", cursive;
     font-size: 35px;
     line-height: 1.2;
@@ -37,7 +37,7 @@
         flex-direction: column; /* Modifie la direction principale du flexbox de row (par défaut) à column */
     }
 
-    .subtitle {
+    .subtitle-1 {
         margin-bottom: 10px; /* Ajoute une marge en bas pour espacer les boutons empilés */
     }
 }
