@@ -12,11 +12,13 @@
     display: flex;          /* Ajouté pour le centrage avec Flexbox */
     align-items: center;    /* Centrage vertical du contenu avec Flexbox */
     justify-content: center;
-
 }
 
 
 #svgBG {
     overflow: visible;
     z-index: 3;
+    display: flex;
+    
 }
+

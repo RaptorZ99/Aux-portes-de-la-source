@@ -1,6 +1,15 @@
 .subtitle-1.active1 {
     background-color: #f5dccb ; /* couleur de fond des boutons actifs */
     z-index: 10;
+    cursor: pointer;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    border-radius: 15px;
+}
+
+.subtitle-1.active1:hover {
+    box-shadow: none;
+
 }
 
 .content-item {
@@ -12,6 +21,8 @@
     background-color: #faf3ed ; /* couleur de fond des boutons actifs */
     z-index: 10;
 }
+
+
 
 .buttons {
     display: flex;
